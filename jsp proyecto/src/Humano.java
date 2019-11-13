@@ -31,7 +31,11 @@ public abstract class Humano {
 		this.movimientos = movimientos;
 	}
 
-	
+	public void usarMovimiento(Movimiento m, Humano h) {
+		
+		setVida(m.getDaño()+h.vida);
+		
+	}
 	
 	
 	

@@ -5,25 +5,24 @@ public class LucaAlberto extends Humano{
 	public LucaAlberto(int v) {
 		
 		super(500);
+		instanciaMovimientos();
 		
 	}
 	
 	
-	public void setMovimientosLA(){
-		
-	}
+	
 	
 	public void instanciaMovimientos() {
 		//seguimos con las practicas
-		Movimiento seguimosConPracticas = new Movimiento("Seguimos con las practicas", 20);
+		Movimiento seguimosConPracticas = new Movimiento("Seguimos con las practicas", -20, 1);
 		//castillo
-		Movimiento llavesCastillo = new Movimiento("Las llaves de un castillo", 5);
+		Movimiento llavesCastillo = new Movimiento("Las llaves de un castillo", -5, 1);
 		//eso es una df trivial
-		Movimiento dfTrivial = new Movimiento("df trivial", 30);
+		Movimiento dfTrivial = new Movimiento("df trivial", -30, 1);
 		// ese diseño no se parece al mio
-		Movimiento diseñoMalo = new Movimiento("Ese diseño no se parece al mio", 70);
+		Movimiento diseñoMalo = new Movimiento("Ese diseño no se parece al mio", -70, 1);
 		// prohibido moviles
-		Movimiento prohibidoMoviles = new Movimiento ("Eso es un movil??????", 90);
+		Movimiento prohibidoMoviles = new Movimiento ("Eso es un movil??????", -90, 1);
 		
 		super.movimientos.add(seguimosConPracticas);
 		super.movimientos.add(llavesCastillo);
@@ -33,6 +32,8 @@ public class LucaAlberto extends Humano{
 		
 		
 	}
+	
+	
 	
 	
 
